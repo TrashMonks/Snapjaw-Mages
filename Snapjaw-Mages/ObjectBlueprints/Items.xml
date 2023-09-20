@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="Pyovya_SnapjawMage_Magic Tome" Inherits="BaseMissileWeapon">
+    <!-- We borrow the same description that StandaloneMarkovBook uses -->
+    <part Name="Description" Short="Crisp pages of goatskin vellum are bound into a codex." />
+    <part Name="Physics" Weight="1" UsesTwoSlots="true" />
+    <part Name="Commerce" Value="80" />
+
+    <tag Name="Tier" Value="2" />
+    <tag Name="Mods" Value="" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+</objects>
