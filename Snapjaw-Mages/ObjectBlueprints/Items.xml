@@ -10,4 +10,20 @@
     <tag Name="Mods" Value="" />
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
+
+  <object Name="Pyovya_SnapjawMage_Fire Tome" Inherits="Pyovya_SnapjawMage_Magic Tome">
+    <part Name="Render" DisplayName="tome of {{R|fire}}" Tile="Items/sw_book_1.bmp" ColorString="&amp;R" DetailColor="Y" />
+    <part Name="MissileWeapon" AmmoChar="f" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
+    <part Name="CooldownAmmoLoader" Cooldown="10" Readout="true" ProjectileObject="ProjectileFlamethrower" />
+
+    <tag Name="MissileFireSound" Value="flamethrower" />
+  </object>
+
+  <object Name="Pyovya_SnapjawMage_Ice Tome" Inherits="Pyovya_SnapjawMage_Magic Tome">
+    <part Name="Render" DisplayName="tome of {{C|ice}}" Tile="Items/sw_book_1.bmp" ColorString="&amp;C" DetailColor="Y" />
+    <part Name="MissileWeapon" AmmoChar="FR" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
+    <part Name="CooldownAmmoLoader" Cooldown="10" Readout="true" ProjectileObject="ProjectileFreezeRay" />
+
+    <tag Name="MissileFireSound" Value="hiss_low" />
+  </object>
 </objects>
