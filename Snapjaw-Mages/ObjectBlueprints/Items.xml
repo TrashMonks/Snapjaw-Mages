@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <objects>
+  <!-- Weapons -->
   <object Name="Pyovya_SnapjawMage_Magic Tome" Inherits="BaseMissileWeapon">
     <!-- We borrow the same description that StandaloneMarkovBook uses -->
     <part Name="Description" Short="Crisp pages of goatskin vellum are bound into a codex." />
@@ -14,7 +15,7 @@
   <object Name="Pyovya_SnapjawMage_Fire Tome" Inherits="Pyovya_SnapjawMage_Magic Tome">
     <part Name="Render" DisplayName="tome of {{R|fire}}" Tile="Items/sw_book_1.bmp" ColorString="&amp;R" DetailColor="Y" />
     <part Name="MissileWeapon" AmmoChar="f" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
-    <part Name="CooldownAmmoLoader" Cooldown="10" Readout="true" ProjectileObject="ProjectileFlamethrower" />
+    <part Name="CooldownAmmoLoader" Cooldown="10" Readout="true" ProjectileObject="Pyovya_SnapjawMage_ProjectileFireTome" />
 
     <tag Name="MissileFireSound" Value="flamethrower" />
   </object>
@@ -22,8 +23,23 @@
   <object Name="Pyovya_SnapjawMage_Ice Tome" Inherits="Pyovya_SnapjawMage_Magic Tome">
     <part Name="Render" DisplayName="tome of {{C|ice}}" Tile="Items/sw_book_1.bmp" ColorString="&amp;C" DetailColor="Y" />
     <part Name="MissileWeapon" AmmoChar="FR" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
-    <part Name="CooldownAmmoLoader" Cooldown="10" Readout="true" ProjectileObject="ProjectileFreezeRay" />
+    <part Name="CooldownAmmoLoader" Cooldown="10" Readout="true" ProjectileObject="Pyovya_SnapjawMage_ProjectileIceTome" />
 
     <tag Name="MissileFireSound" Value="hiss_low" />
+  </object>
+
+  <!-- Projectiles -->
+  <object Name="Pyovya_SnapjawMage_ProjectileFireTome" Inherits="TemporaryProjectile">
+    <part Name="Render" DisplayName="{{R|stream of flame}}" ColorString="&amp;R" />
+    <part Name="Projectile" BasePenetration="4" BaseDamage="1d4" Attributes="Heat Fire" ColorString="&amp;R" PassByVerb="whoosh" />
+    <part Name="TemperatureOnHit" Amount="4d20" Max="false" OnWielderHit="true" />
+    <part Name="TemperatureOnEntering" Amount="8d20" Max="false" OnWielderHit="true" />
+  </object>
+
+  <object Name="Pyovya_SnapjawMage_ProjectileIceTome" Inherits="TemporaryProjectile">
+    <part Name="Render" DisplayName="{{C|streak of ice}}" ColorString="&amp;B" />
+    <part Name="Projectile" BasePenetration="4" BaseDamage="1d4" Attributes="Cold" ColorString="&amp;B" PassByVerb="crackle" />
+    <part Name="TemperatureOnHit" Amount="-4d20" Max="false" OnWielderHit="true" />
+    <part Name="TemperatureOnEntering" Amount="-8d20" Max="false" OnWielderHit="true" />
   </object>
 </objects>
