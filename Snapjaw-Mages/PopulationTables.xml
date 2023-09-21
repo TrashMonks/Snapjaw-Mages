@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<populations>
+  <population Name="SnapjawParty0" Load="Merge">
+    <group Name="Creatures" Load="Merge">
+      <object Number="1" Blueprint="Pyovya_SnapjawMage_Fire Mage" />
+      <object Number="1" Blueprint="Pyovya_SnapjawMage_Ice Mage" />
+    </group>
+  </population>
+
+  <population Name="SnapjawParty1" Load="Merge">
+    <group Name="Creatures" Load="Merge">
+      <object Number="1" Blueprint="Pyovya_SnapjawMage_Fire Mage" />
+      <object Number="1" Blueprint="Pyovya_SnapjawMage_Ice Mage" />
+    </group>
+  </population>
+
+  <population Name="SnapjawParty1-with-Warlord" Load="Merge">
+    <group Name="Creatures" Load="Merge">
+      <object Number="1" Blueprint="Pyovya_SnapjawMage_Fire Mage" />
+      <object Number="1" Blueprint="Pyovya_SnapjawMage_Ice Mage" />
+    </group>
+  </population>
+
+  <population Name="SnapjawParty0" Load="Merge">
+    <group Name="Creatures" Load="Merge">
+      <object Number="1" Blueprint="Pyovya_SnapjawMage_Fire Mage" />
+      <object Number="1" Blueprint="Pyovya_SnapjawMage_Ice Mage" />
+    </group>
+  </population>
+</populations>
