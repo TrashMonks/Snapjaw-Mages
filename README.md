@@ -1,7 +1,7 @@
 # Snapjaw Mages!
 
 This repository contains the source for the mod developed in the
-[_Snapjaw Mages!_ modding tutorial](https://wiki.cavesofqud.com/wiki/Modding:Snapjaw_Mages_tutorial)
+[_Snapjaw Mages!_ modding tutorial](https://wiki.cavesofqud.com/wiki/Modding:Tutorial_-_Snapjaw_Mages)
 on the Caves of Qud wiki.
 
 The [commit history](https://github.com/TrashMonks/Snapjaw-Mages/commits/main)
