@@ -3,5 +3,17 @@
   <object Name="Pyovya_SnapjawMage_Snapjaw Mage" Inherits="Snapjaw">
     <part Name="Description" Short="A tattered robe and decaying hat are all that protect =pronouns.possessive= thin layer of grizzled fur from the forces of nature. But behind that furtive glance, =pronouns.subjective= =verb:prepare:afterpronoun= an elemental spell, deployed at a moment's notice against threats to =pronouns.objective= and =pronouns.possessive= kin. =pronouns.Subjective= =verb:understand:afterpronoun= not the power that =pronouns.subjective= =verb:wield:afterpronoun=; and that only makes =pronouns.objective= all the more dangerous." />
     <part Name="Render" DisplayName="snapjaw mage" Tile="Pyovya_SnapjawMage/snapjaw_mage.png" ColorString="&amp;O" DetailColor="Y" />
+
+    <inventoryobject Blueprint="Walking Stick" Number="1" />
+    <inventoryobject Blueprint="Cloth Robe" Number="1" />
+    <inventoryobject Blueprint="Sandals" Number="1" />
+    <inventoryobject Blueprint="StandaloneMarkovBook" Number="1-2" Chance="10" />
+
+    <skill Name="Cudgel" />
+
+    <stat Name="Hitpoints" Value="15" />
+    <stat Name="DV" Value="4" />
+    <stat Name="Ego" sValue="19" />
+    <stat Name="Willpower" sValue="19" />
   </object>
 </objects>
